@@ -23,7 +23,13 @@ html {box-sizing: border-box;}
   --blue:rgb(93,188,252);
 }
 .light{
-  --primary:#fff;
+  --primary:rgb(250, 250, 250);
+  --secondary:rgb(255, 255, 255);
+  --border:rgba(63,63,70,0.4);
+  --title:rgb(244 244 245);
+  --subtitle:rgb(161 161 170);
+  --bgheader:rgb(39,39,42);
+  --blue:rgb(93,188,252);
 }
 body{
   background-color: var(--primary) ;
@@ -69,6 +75,10 @@ button:hover{
 }
 button:active{
  scale: 0.9;
+}
+button:disabled{
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 @media (max-width: 1000px) {
   .container{

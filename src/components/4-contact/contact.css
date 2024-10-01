@@ -55,7 +55,11 @@ section.contac-us .submit{
 section.contac-us .submit{
     scale: 0.97;
 }
-
+@media (max-width: 1100px) {
+    .contactanimation{
+        display: none;
+    }
+}
 
 @media (max-width: 600px) {
     section.contac-us .animation{

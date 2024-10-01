@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import './hero.css';
+import Lottie from "lottie-react";
+import dev from '../../../src/animation/dev.json'
 function Hero(){
+    const lottieRef=useRef();
     return(
         <section className="hero flex">
         <div className="left-section">
@@ -29,8 +32,12 @@ function Hero(){
          <div className="icon icon-linkedin-with-circle"></div>
     </div>
         </div>
-        <div className="right-section animation border">
-            cc
+        <div className="right-section animation ">
+        <Lottie className=""  
+         onLoadedImages={()=>{
+           lottieRef.current.setSpeed(0.5); 
+         }}
+        animationData={dev}/>
         </div>
         </section>
     )

@@ -2,6 +2,15 @@
 section.hero{
     margin-top: 3rem;
 }
+section.hero .animation{
+    width: 100%;
+    translate: 70px 55px ;
+}
+@media (max-width: 1100px) {
+    section.hero .animation{
+        display: none;
+    }
+}
 section.hero .parent-avatar.flex{
     align-items: end;
 }
