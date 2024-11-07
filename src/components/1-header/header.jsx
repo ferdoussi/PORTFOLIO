@@ -30,11 +30,8 @@ import './header.css'
                     
                  </ul>
             </nav>
-            <button onClick={()=>{
-               localStorage.setItem('currentMode', theme ==='dark' ? 'light' : 'dark');
-               setTheme(localStorage.getItem('currentMode'))
-            }} className="mode flex">
-                 <span  className="icon-moon"></span>
+            <button >
+                 <span ></span>
             </button>
              {
                 showmodal &&(

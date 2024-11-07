@@ -2,7 +2,7 @@ import React from "react";
 import './main.css'
 function Main(){
     return(
-        <div>
+        <div style={{fontSize:'50px'}}>
             main
         </div>
     )
